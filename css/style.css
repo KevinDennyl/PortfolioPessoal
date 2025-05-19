@@ -1,0 +1,227 @@
+/* Aluno: Kevin Dennyl | RU: 4672588 */
+
+/* Reset de margens e espaçamentos padrão para todos os elementos */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho (logo + menu) */
+#header{
+    background-color: #0066CC;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Espaçamento interno para o logo e menu */
+#logo, #menu{
+    padding: 10px;
+}
+
+/* Estilo padrão dos links no cabeçalho */
+#header a:link, #header a:visited{
+    color: #FFFFFF;
+    padding: 8px 12px;
+}
+
+/* Efeito ao passar o mouse nos links do menu */
+#header a:hover{
+    color: #0066CC;
+    background-color: #FFFFFF;
+}
+
+/* Classe para deixar o texto branco */
+.white{
+    color: #FFFFFF
+}
+
+/* Container principal do conteúdo */
+#content{
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Container da área de posts (lado esquerdo) */
+#posts {
+    width: 660px;
+    float: left;
+}
+
+
+/* Estilo da data do post */
+.data-post{
+    font-size: 13px;
+    border-bottom: 1px solid #0066CC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+
+/* Estilo base de todos os links */
+a{
+    text-decoration: none;
+}
+
+/* Cor padrão dos links */
+a:link, a:visited{
+    color: #0066CC;
+}
+
+/* Efeito ao passar o mouse nos links */
+a:hover{
+    text-decoration: underline;
+}
+
+/* Estilo geral */
+body {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #EDEDED;
+    color: #333;
+}
+
+/* Títulos principais */
+h1 {
+    color: #252525;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+h2 {
+    color: #0066CC;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+h3 {
+    color: #565656;
+    background-color: #CCCCCC;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+/* Imagens dentro das postagens */
+.img-post {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto 20px auto;
+    border-radius: 5px;
+  }
+
+/* Estilo das seções principais */
+.post {
+    background-color: #FFFFFF;
+    padding: 20px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+/* Rodapé */
+#footer {
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background-color: #0066CC;
+    color: #FFFFFF;
+}
+
+/* Formulário visual */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    width: 100%;
+    resize: vertical;
+}
+
+form button {
+    background-color: #0066CC;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+form button:hover {
+     background-color: #004A99; 
+}
+
+/* ===================== RESPONSIVIDADE ===================== */
+@media screen and (max-width: 768px) {
+
+    .home {
+        padding: 10px;
+    }
+    /* Reduz a largura do conteúdo principal */
+    #content {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    /* Ajusta menu para empilhar ou reduzir padding */
+    #menu a {
+      display: inline-block;
+      padding: 6px 8px;
+      font-size: 14px;
+    }
+  
+    /* Reduz imagem de postagens */
+    .img-post {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+      }
+
+    
+    /* Ajusta títulos e textos */
+    .post {
+        padding: 15px;
+        
+      }
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    /* Reduz o tamanho do botão no formulário */
+    form button {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    /* Campos do formulário em telas pequenas */
+    form input,
+    form textarea {
+      font-size: 14px;
+    }
+  }
+  
