@@ -38,21 +38,26 @@
       <p>Ou preencha o formulário visual abaixo:</p>
 
       <!-- Formulário visual (não funcional) -->
-      <form>
-         <!-- Campo Nome -->
+      <form action="https://formsubmit.co/dennyl.kevin@gmail.com" method="POST">
+  
+        <!-- Redirecionamento após envio -->
+        <input type="hidden" name="_next" value="https://kevindennyl.github.io/PortfolioPessoal/sucesso.html">
+        
+        <!-- Desabilita captcha obrigatório -->
+        <input type="hidden" name="_captcha" value="false">
+      
+        <!-- Campos do formulário -->
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
-
-         <!-- Campo Email -->
+      
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-
-        <!-- Campo Mensagem -->
+      
         <label for="mensagem">Mensagem:</label>
         <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-         <!-- Botão de envio -->
+      
         <button type="submit">Enviar</button>
+      
       </form>
     </div>
 
